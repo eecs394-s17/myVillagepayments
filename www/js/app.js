@@ -2,13 +2,13 @@
 // Example with Checkout (Option 2)
 
 // These are fixed values, do not change this
-var NOODLIO_PAY_API_URL         = "https://noodlio-pay.p.mashape.com"; 
-var NOODLIO_PAY_API_KEY         = "h5iiDixVtjmshnAPiLpEcK1zp78tp1VDWvfjsncgjA5pj49xSN";
-var NOODLIO_PAY_CHECKOUT_KEY    = {test: "pk_test_QGTo45DJY5kKmsX21RB3Lwvn", live: "pk_live_ZjOCjtf1KBlSHSyjKDDmOGGE"};
+var NOODLIO_PAY_API_URL         = "PUT API URL HERE"; 
+var NOODLIO_PAY_API_KEY         = "PUT API KEY HERE";
+var NOODLIO_PAY_CHECKOUT_KEY    = {test: "stuff goes here", live: "stuff goes here"};
 
 // Obtain your unique Stripe Account Id from here:
 // https://www.noodl.io/pay/connect
-var STRIPE_ACCOUNT_ID           = "acct_1AJrNAE0ITuQxayS";
+var STRIPE_ACCOUNT_ID           = "stripe account id goes here";
 // Define whether you are in development mode (TEST_MODE: true) or production mode (TEST_MODE: false)
 var TEST_MODE = true;
 
