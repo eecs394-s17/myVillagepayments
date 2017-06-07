@@ -1,0 +1,35 @@
+<ion-view view-title="Gifts">
+  <ion-content class="padding center">
+
+    <div class="padding">
+      <img src="img/myVillageLogo.png" class="circle">
+      <h2>{{ProductMeta.title}}</h2>
+    </div>
+
+    
+    <label class="item item-input">
+      <span class="input-label">Amount in USD</span>
+      <input type="number" ng-model="ProductMeta.priceUSD" placeholder="Amount in USD" min="1" class="input-custom">
+    </label>
+
+    <label class="item item-input">
+      <span class="input-label">For</span>
+      <input type="text" ng-model="ProductMeta.description" placeholder="" min="1" class="input-custom">
+    </label>
+    
+
+    <div class="padding">
+      <button class="button button-full button-balanced" ng-click="charge()">Give ${{ProductMeta.priceUSD}} for {{ProductMeta.description}}</button>
+    </div>
+
+    <p class="padding">
+      <ion-spinner ng-show="status.loading"></ion-spinner>
+    </p>
+
+    <p>
+      {{status.message}}
+    </p>
+
+
+  </ion-content>
+</ion-view>
